@@ -67,18 +67,27 @@ def main():
                               azure_key)
 
     '''
+    # test code
     download_urls = unsplashRequest(orig_tags[0], api, photo_worker)
     for url in download_urls:
-        print(url)
-        print(azureAnalysis(url, azure_key))
+        try:
+            print(url)
+            print(azureAnalysis(url, azure_key))
+        except KeyError:
+            print('KeyError with image. Moving on to next one.')
     '''
 
+
+    # real code, eventually
     tagged_photos = {} # a dict which maps the url where we can find a photo to the tags of that photo
     for tag in orig_tags:
         download_urls = unsplashRequest(tag, api, photo_worker)
         for url in download_urls:
-            tags = azureAnalysis(url, azure_key)
-            tagged_photos[url] = tags
+            try:
+                tags = azureAnalysis(url, azure_key)
+                tagged_photos[url] = tags
+            except KeyError:
+                print('KeyError with image. Image is probably "not accessible." Moving on to next one.')
 
     scores = {}
     for url, tags in tagged_photos.items():
