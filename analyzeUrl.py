@@ -3,6 +3,7 @@ import http.client, urllib.request, urllib.parse, urllib.error, base64, json, os
 # get env variable API key
 azure_key = os.environ.get('AZURE_KEY', None)
 subscription_key = azure_key
+unsplash_key = os.environ.get('UNSPLASH_KEY', None)
 
 uri_base = 'westcentralus.api.cognitive.microsoft.com'
 
@@ -26,4 +27,8 @@ conn.request("POST", "/vision/v1.0/analyze?%s" % params, body, headers)
 response = conn.getresponse()
 data = json.loads(response.read().decode())
 tags = data['description']['tags']
-print(tags)
+
+r = requests.get('https://api.unsplash.com/search/photos?page=1&query=%s?client_id=%s' %(tags[0], unsplash_key))
+print(r)
+
+
