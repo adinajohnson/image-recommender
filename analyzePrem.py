@@ -18,7 +18,7 @@ params = {
 }
 
 # Replace the three dots below with the full file path to a JPEG image of a celebrity on your computer or network.
-image = open('photo_of_me.JPG','rb').read() # Read image file in binary mode
+image = open('1*QZqJhFfD4fPRgb0gj4Ud3g.jpeg','rb').read() # Read image file in binary mode
 
 try:
     # NOTE: You must use the same location in your REST call as you used to obtain your subscription keys.
@@ -29,7 +29,8 @@ try:
                              params = params,
                              data = image)
     data = response.json()
-    print(data)
+    tags = data['description']['tags']
+    print(tags)
 except Exception as e:
     print("[Errno {0}] {1}".format(e.errno, e.strerror))
 ####################################
