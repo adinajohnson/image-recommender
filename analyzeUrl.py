@@ -42,7 +42,8 @@ try:
     conn.request("POST", "/vision/v1.0/analyze?%s" % params, body, headers)
     response = conn.getresponse()
     data = response.read()
-    print(data)
+    tags = data['description']['tags']
+    print(tags)
 
 except Exception as e:
     print('Error:')
