@@ -24,7 +24,6 @@ body = "{'url':'http://sheepmountain.com/wp-content/uploads/2016/01/20150131-DSC
 conn = http.client.HTTPSConnection('westcentralus.api.cognitive.microsoft.com')
 conn.request("POST", "/vision/v1.0/analyze?%s" % params, body, headers)
 response = conn.getresponse()
-data_bytes = response.read()
-data = json.loads(data_bytes.decode())
+data = json.loads(response.read().decode())
 tags = data['description']['tags']
 print(tags)
