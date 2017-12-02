@@ -1,4 +1,4 @@
-import http.client, urllib.request, urllib.parse, urllib.error, base64, json, os
+import http.client, urllib.request, urllib.parse, urllib.error, base64, json, os, requests
 
 azure_key = os.environ.get('AZURE_KEY', None)
 
@@ -37,16 +37,12 @@ body = "{'url':'http://sheepmountain.com/wp-content/uploads/2016/01/20150131-DSC
 
 try:
     # Execute the REST API call and get the response.
+
     conn = http.client.HTTPSConnection('westcentralus.api.cognitive.microsoft.com')
     conn.request("POST", "/vision/v1.0/analyze?%s" % params, body, headers)
     response = conn.getresponse()
     data = response.read()
-
-    # 'data' contains the JSON data. The following formats the JSON data for display.
-    parsed = json.loads(data)
-    print ("Response:")
-    print (json.dumps(parsed, sort_keys=True, indent=2))
-    conn.close()
+    print(data)
 
 except Exception as e:
     print('Error:')
