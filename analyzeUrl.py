@@ -26,6 +26,7 @@ def azureAnalysis(subscription_key):
     data = json.loads(data_bytes.decode())
     tags = data['description']['tags']
 
+
     return tags
 
 def unsplashRequest(tags, unsplash_key):
