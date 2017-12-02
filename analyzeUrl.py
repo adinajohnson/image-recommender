@@ -33,7 +33,7 @@ params = urllib.parse.urlencode({
 })
 
 # Replace the three dots below with the URL of a JPEG image of a celebrity.
-body = "{'url':'https://upload.wikimedia.org/wikipedia/commons/1/12/Broadway_and_Times_Square_by_night.jpg'}"
+body = "{'url':'http://sheepmountain.com/wp-content/uploads/2016/01/20150131-DSC_0640-3-1500x700.jpg'}"
 
 try:
     # Execute the REST API call and get the response.
