@@ -28,7 +28,7 @@ headers = {
 
 params = urllib.parse.urlencode({
     # Request parameters. All of them are optional.
-    'visualFeatures': 'Categories,Description,Color',
+    'visualFeatures': 'Description',
     'language': 'en',
 })
 

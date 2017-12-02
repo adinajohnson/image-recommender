@@ -13,13 +13,12 @@ headers = {
 
 params = {
     # Request parameters. All of them are optional.
-    'visualFeatures': 'Categories',
-    'details': 'Celebrities',
+    'visualFeatures': 'Description',
     'language': 'en',
 }
 
 # Replace the three dots below with the full file path to a JPEG image of a celebrity on your computer or network.
-image = open('...','rb').read() # Read image file in binary mode
+image = open('photo_of_me.JPG','rb').read() # Read image file in binary mode
 
 try:
     # NOTE: You must use the same location in your REST call as you used to obtain your subscription keys.
