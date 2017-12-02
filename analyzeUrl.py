@@ -1,4 +1,5 @@
 import http.client, urllib.request, urllib.parse, urllib.error, base64, json, os, requests
+from requests.auth import HTTPBasicAuth
 
 # get env variable API key
 azure_key = os.environ.get('AZURE_KEY', None)
@@ -30,5 +31,3 @@ tags = data['description']['tags']
 
 r = requests.get('https://api.unsplash.com/search/photos?page=1&query=%s?client_id=%s' %(tags[0], unsplash_key))
 print(r)
-
-
