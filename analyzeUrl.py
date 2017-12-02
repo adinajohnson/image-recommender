@@ -1,5 +1,6 @@
 import http.client, urllib.request, urllib.parse, urllib.error, base64, json, os, requests
-from requests.auth import HTTPBasicAuth
+from unsplash.api import Api
+from unsplash.auth import Auth
 
 def azureAnalysis(subscription_key):
 
@@ -30,14 +31,20 @@ def azureAnalysis(subscription_key):
 
     return tags
 
-def unsplashRequest(tags, unsplash_key):
-    r = requests.get('https://api.unsplash.com/search/photos?page=1&query=%s?client_id=%s' %(tags[0], unsplash_key))
-    print(r)
+def unsplashRequest(tags):
+    client_id = os.environ.get('UNSPLASH_ID', None)
+    client_secret = os.environ.get('UNSPLASH_SECRET', None)
+    redirect_uri = ""
+    code = ""
+
+    auth = Auth(client_id, client_secret, redirect_uri, code=code)
+    api = Api(auth)
+
+    print(api.search.photos(tags[0]))
 
 
 # get env variable API key
 azure_key = os.environ.get('AZURE_KEY', None)
-unsplash_key = os.environ.get('UNSPLASH_KEY', None)
 
 tags = azureAnalysis(azure_key)
-unsplashRequest(tags, unsplash_key)
+unsplashRequest(tags)
