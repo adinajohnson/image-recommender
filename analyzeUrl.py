@@ -45,7 +45,7 @@ def unsplashRequest(tag, api, photo_worker):
 
 def jaccard(A, B):
     numer = len(A & B)
-    denom = len(A + B)
+    denom = len(A | B)
     return numer/denom
 
 def main():
@@ -89,6 +89,7 @@ def main():
             except KeyError:
                 print('KeyError with image. Image is probably "not accessible." Moving on to next one.')
 
+    orig_tags = set(orig_tags)
     scores = {}
     for url, tags in tagged_photos.items():
         tags = set(tags)
