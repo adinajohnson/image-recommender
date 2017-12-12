@@ -78,9 +78,8 @@ def get_search_terms(tags, text, file):
     :param file: a file to write information about the ranking process to.
     :return: the tag
     """
-    print('imports complete')
-
     # get the model for the weights
+    print('loading model')
     model = gensim.models.KeyedVectors.load_word2vec_format('word2vec.6B.300d.model')
     print('model loaded')
 
@@ -204,5 +203,5 @@ if __name__ == "__main__":
     tags = ['outdoor', 'mountain', 'nature', 'forest', 'background', 'snow', 'lake', 'standing', 'covered', 'front',
             'tree', 'man', 'field', 'group', 'tall', 'hill', 'yellow', 'grazing', 'large', 'skiing', 'flock', 'slope']
     text = open('goat_mountain.output').read()
-    file = open('output.output')
+    file = open('mountain.output')
     get_search_terms(tags, text, file)

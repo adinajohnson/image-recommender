@@ -4,6 +4,7 @@ from unsplash.auth import Auth
 from unsplash.photo import Photo
 import time
 import keyworder
+import sys
 
 
 def azureAnalysis(photo_url, subscription_key):
@@ -107,7 +108,7 @@ def write_picture_info(file, heading, url, tags, captions=None):
     file.write('\n\n')
 
 
-def main(orig_photo_url, text):
+def recommend(orig_photo_url, text):
     """
     Handles the image recommending.
     :param orig_photo_url: the url where the
@@ -115,7 +116,7 @@ def main(orig_photo_url, text):
     :return:
     """
     # get a file so we can write results into it
-    results_file = open('mushroom_trial10.output', 'w')
+    results_file = open('mountain_trial.output', 'w')
 
     #get unsplash API stuff
     client_id = os.environ.get('UNSPLASH_ID', None)
@@ -172,6 +173,7 @@ def main(orig_photo_url, text):
 
 
 if __name__ == '__main__':
-    orig_photo_url = 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Amanita_muscaria_%28fly_agaric%29.JPG/1024px-Amanita_muscaria_%28fly_agaric%29.JPG'
-    text = open('mushroom.output').read()
-    main(orig_photo_url, text)
+    orig_photo_url = sys.argv[1]
+    text_path = sys.argv[2]
+    text = open(text_path).read()
+    recommend(orig_photo_url, text)

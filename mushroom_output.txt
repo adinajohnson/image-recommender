@@ -1,0 +1,327 @@
+Original Photo:
+https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Amanita_muscaria_%28fly_agaric%29.JPG/1024px-Amanita_muscaria_%28fly_agaric%29.JPG
+['grass', 'fungus', 'outdoor', 'red', 'sitting', 'small', 'looking', 'little', 'field', 'standing', 'wire', 'green', 'pink', 'eating', 'tall', 'bird', 'white', 'laying', 'phone', 'grassy', 'fire', 'branch', 'blue']
+'confidence': 0.3050503119008333, 'text': 'a red fire hydrant sitting in the grass'
+
+122 word types found
+
+threshold = 0.000010
+Converging:
+0.142572388617
+0.000945643564193
+0.000525277945104
+0.000295399003873
+0.000167040091534
+9.47231185023e-05
+5.37351052384e-05
+3.048312016e-05
+1.72924704602e-05
+9.80966495121e-06
+
+	types 1 1.184870
+	species 3 1.176360
+	surface 1 1.170120
+	layer 1 1.164780
+	often 1 1.164061
+	diameter 1 1.164053
+	patches 2 1.160005
+	different 1 1.159887
+	tissue 1 1.158158
+fungus 23 1.157119
+	fruit 1 1.154414
+	genus 1 1.154180
+	typical 1 1.149019
+	stem 1 1.148040
+	fragments 1 1.147185
+	gills 9 1.146233
+	structure 1 1.145998
+grass 23 1.144434
+	mushroom 3 1.144352
+	attached 2 1.143946
+	body 1 1.143821
+red 20 1.142727
+pink 11 1.142398
+	spores 1 1.139466
+white 7 1.139357
+	mushrooms 5 1.139085
+	substrate 1 1.136124
+	parts 1 1.134690
+	way 1 1.133595
+blue 1 1.132998
+	egg 2 1.132278
+green 12 1.132158
+	lateral 1 1.132108
+	stalk 11 1.130966
+	morphology 1 1.129629
+	filaments 1 1.129446
+	variations 1 1.127687
+	feature 1 1.127625
+	cap 4 1.125955
+	nests 1 1.125389
+eating 10 1.124976
+looking 17 1.124735
+	difficult 1 1.123715
+	important 1 1.123507
+	exists 1 1.122672
+	number 1 1.120846
+bird 9 1.120724
+	specialized 1 1.120385
+	hyphae 2 1.120287
+	stalks 1 1.120274
+	genera 2 1.119327
+	ring 2 1.115757
+	others 2 1.114824
+	conditions 1 1.114556
+	attachment 1 1.113561
+	faint 1 1.110207
+wire 13 1.109681
+	roll 1 1.108424
+	partial 4 1.107979
+	great 1 1.107683
+	bear 1 1.107326
+field 15 1.107249
+	millimeters 1 1.106594
+	base 2 1.105972
+	mass 1 1.105183
+	mycelium 2 1.104049
+	absent 1 1.103772
+	veil 7 1.103726
+	warts 1 1.102525
+	breaks 1 1.102186
+	middle 2 1.101713
+	free 2 1.101550
+	truffles 1 1.101078
+grassy 4 1.100006
+	distinctions 2 1.096892
+	button 2 1.094404
+	veils 1 1.094192
+	brackets 1 1.091000
+outdoor 21 1.090705
+	remnants 2 1.090623
+	margin 1 1.089043
+	finer 1 1.088231
+	cottony 1 1.085450
+sitting 19 1.084588
+	interwoven 1 1.084182
+	supporting 1 1.083388
+phone 5 1.083325
+	vocabulary 1 1.082993
+	central 1 1.081368
+	threadlike 1 1.081029
+	second 1 1.079943
+fire 3 1.079210
+branch 2 1.076429
+	jellies 1 1.074563
+	stipe 1 1.074181
+	amanita 2 1.072182
+	cup 1 1.072041
+	universal 3 1.071621
+	environmental 1 1.070532
+	decurrent 2 1.068208
+	nodule 1 1.068097
+	annulus 1 1.066242
+	agaricus 1 1.066198
+	extremes 1 1.066016
+	puffballs 1 1.065132
+	roundish 1 1.064653
+	cortinarius 1 1.064637
+	off-center 1 1.064180
+	gill 1 1.063862
+	volva 2 1.063312
+	polypores 1 1.057678
+	adnate 1 1.056995
+	ruptures 1 1.055828
+	lepiota 2 1.047942
+	pleurotus 2 1.040222
+	spiderweb 1 1.036803
+	pinhead 1 1.034473
+	mycological 1 1.023850
+	omphalotus 1 1.023192
+	pluteus 1 1.015980
+	cortina 1 1.013853
+	panus 1 0.995999
+
+Search term: fungus	Result #0
+https://images.unsplash.com/uploads/14135408693062ffa0203/feaa83a8?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=03a68a218f7900357e9373afa43a4eff
+['fungus', 'grass', 'outdoor', 'rock', 'white', 'sitting', 'small', 'top', 'food', 'green', 'rocky', 'standing', 'covered', 'field', 'water', 'laying', 'bird']
+'confidence': 0.8432767373337262, 'text': 'a close up of a rock'
+
+Search term: fungus	Result #1
+https://images.unsplash.com/photo-1507220121775-a27a8586dbaf?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=f6fd604941d10a67d3804ab74615c047
+['grass', 'outdoor', 'bird', 'fungus', 'small', 'sitting', 'top', 'standing', 'colorful', 'little', 'flower', 'field', 'perched', 'red', 'white']
+'confidence': 0.5904256783746319, 'text': 'a bird sitting on grass'
+
+Search term: fungus	Result #2
+https://images.unsplash.com/photo-1506141186768-3b26bbcc5348?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=bb567236da884aa9856acef8e7cb54aa
+['fungus', 'standing', 'front', 'hat', 'yellow', 'holding', 'bed']
+'confidence': 0.24549105890442077, 'text': 'a close up of a hat'
+
+Search term: fungus	Result #3
+https://images.unsplash.com/photo-1471435403905-7a32e748e6b9?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=b2dbf9617e8a1846e1770af4baf4905f
+['outdoor', 'person', 'grass', 'forest', 'wood', 'holding', 'standing', 'wooded', 'man', 'wearing', 'hand', 'yellow', 'tree', 'young', 'park', 'field', 'woman', 'white', 'hydrant']
+'confidence': 0.7382263119453875, 'text': 'a person standing next to a forest'
+
+Search term: fungus	Result #4
+https://images.unsplash.com/photo-1498390474257-36cc8a1e437e?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=c1ed898097b47ca5f760f5671e5f842f
+['outdoor', 'running', 'beach', 'small', 'walking', 'street', 'city', 'mountain', 'field', 'rain', 'toy', 'water', 'blurry', 'dirt', 'standing', 'fire', 'red', 'white', 'ocean', 'hydrant', 'umbrella', 'flying', 'riding']
+'confidence': 0.8736597932251877, 'text': 'a blurry image of a dirt field'
+
+Search term: fungus	Result #5
+https://images.unsplash.com/photo-1501414387444-ab55ca3810b3?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=e21dedc59f1d0d592c774f15272e0257
+['fungus', 'grass', 'outdoor', 'sitting', 'small', 'white', 'covered', 'green', 'brown', 'top', 'black', 'bird', 'field', 'standing', 'dirt']
+'confidence': 0.6856930966219745, 'text': 'fungus growing on a tree'
+
+Search term: fungus	Result #6
+https://images.unsplash.com/photo-1454425064867-5ba516caf601?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=1839e92ae54009d1f8fd99a99f3d11c4
+['fungus', 'grass', 'sitting', 'small', 'green', 'top', 'rain', 'red', 'perched']
+'confidence': 0.8399833733948342, 'text': 'a close up of some grass'
+
+Search term: fungus	Result #7
+https://images.unsplash.com/photo-1414502027127-d1f661f502e9?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=3a69918a483ca9c62ebf8cc90582cdfc
+['fungus', 'grass', 'outdoor', 'piece', 'sitting', 'small', 'top', 'food', 'close', 'flower', 'table', 'covered', 'old', 'white', 'field', 'cake', 'garden', 'eating', 'red', 'plate', 'pizza']
+'confidence': 0.9152245367669741, 'text': 'a close up of a garden'
+
+Search term: fungus	Result #8
+https://images.unsplash.com/photo-1438760731177-5b230a60ec95?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=de8f30d02c3cc189c53c66bd6205041c
+['fungus', 'outdoor', 'grass', 'small', 'sitting', 'green', 'standing']
+'confidence': 0.7445018949926473, 'text': 'a close up of some grass'
+
+Search term: fungus	Result #9
+https://images.unsplash.com/photo-1507641103862-2541c37c7f0f?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=b5c65d2ea4f9449716f5a48dc6bcd1a1
+['fungus', 'indoor', 'table', 'sitting', 'small', 'glass', 'cake', 'close', 'top', 'chocolate', 'plate', 'large', 'bird', 'white', 'vase']
+'confidence': 0.8759345141210112, 'text': 'a close up of a plant'
+
+Search term: fungus	Result #10
+https://images.unsplash.com/photo-1507491518447-ac20c6c50dc9?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=81fd6d0713f9128672a2a520c517474b
+['fungus', 'outdoor', 'small', 'sitting', 'bird', 'black', 'top', 'hanging', 'covered', 'table', 'standing', 'white', 'umbrella', 'eating', 'night', 'plate']
+'confidence': 0.5056264670368245, 'text': 'fungus growing on a tree'
+
+Search term: fungus	Result #11
+https://images.unsplash.com/photo-1512595813026-e0ea0dda5b22?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=d1be4bf64c790bb7b5b6e140f9185538
+['fungus', 'grass', 'outdoor', 'sitting', 'small', 'red', 'black', 'top', 'covered', 'white', 'green', 'hydrant', 'standing', 'field', 'fire']
+'confidence': 0.7074240192996772, 'text': 'a fungus growing on a tree'
+
+Search term: fungus	Result #12
+https://images.unsplash.com/photo-1508505459706-81c1f1b3d467?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=ac5cc70fea3e24b4cb500783f4c07cef
+['sitting', 'brush', 'colorful', 'room', 'head', 'umbrella', 'hat', 'large', 'white', 'bed', 'rain']
+'confidence': 0.39280507224909533, 'text': 'a close up of a colorful umbrella'
+
+Search term: fungus	Result #13
+https://images.unsplash.com/photo-1508749199921-1b8a349245c2?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=2771064f2f02c6c9f07450c610281c6d
+['grass', 'fungus', 'bird', 'outdoor', 'small', 'sitting', 'little', 'top', 'red', 'food', 'piece', 'standing', 'white', 'covered', 'field', 'black', 'eating', 'apple', 'fruit', 'branch', 'perched']
+'confidence': 0.35659459611308, 'text': 'a small red bird sitting on grass'
+
+Search term: grass	Result #0
+https://images.unsplash.com/photo-1489065094455-c2d576ff27a0?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=0b1f899b732fc95bfa6f5260b6b7c82d
+['plant', 'grass', 'flower']
+'confidence': 0.9323105968276942, 'text': 'a close up of a plant'
+
+Search term: grass	Result #1
+https://images.unsplash.com/photo-1485778282426-7d501b522bb4?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=26f728de8ee8b5e37f1aaa3ab1143387
+['green', 'sitting', 'wooden', 'table', 'bench', 'food', 'meat', 'grass', 'white']
+'confidence': 0.5070006094288184, 'text': 'a close up of a green leaf'
+
+Search term: grass	Result #4
+https://images.unsplash.com/reserve/m6rT4MYFQ7CT8j9m2AEC_JakeGivens%20-%20Sunset%20in%20the%20Park.JPG?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=1a39fc54b011c7dc2732bc2f0252e3ff
+[]
+'confidence': 0.6453487363033061, 'text': 'a close up of an animal'
+
+Search term: grass	Result #5
+https://images.unsplash.com/photo-1494187570835-b188e7f0f26e?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=c20b7c2fcbe10f0c902a488638de1ca1
+['grass', 'outdoor', 'field', 'green', 'large', 'grassy', 'flying', 'water', 'man', 'kite', 'blue', 'top', 'standing', 'open', 'grazing', 'cloudy', 'plane', 'airplane', 'white', 'ocean', 'air', 'red']
+'confidence': 0.9091285028515098, 'text': 'a large green field'
+
+Search term: grass	Result #7
+https://images.unsplash.com/photo-1467740100611-36858db27485?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=7c7133f577956955585ab8444670cae7
+['outdoor', 'grass', 'plant', 'standing', 'flock', 'field', 'grazing', 'sheep', 'flying', 'water', 'group', 'large', 'herd', 'grassy', 'bird', 'green', 'cloudy', 'walking', 'many', 'hill', 'blue', 'tall', 'beach', 'people', 'river']
+'confidence': 0.7906462439642559, 'text': 'a flock of birds flying over a field'
+
+Search term: grass	Result #8
+https://images.unsplash.com/photo-1502481686408-d428268c24ff?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=1f89428901fcf7ef9196800191b52f69
+['grass', 'outdoor', 'green', 'field', 'standing', 'grassy', 'sitting', 'frisbee', 'man', 'white', 'yellow', 'holding', 'throwing', 'flying', 'young', 'air', 'street', 'playing', 'red', 'kite']
+'confidence': 0.8982483317589228, 'text': 'a close up of a green field'
+
+Search term: grass	Result #9
+https://images.unsplash.com/photo-1501520158826-76df880863a3?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=9ede3af609952b00fd52de31f151722b
+['grass', 'outdoor', 'field', 'green', 'man', 'grassy', 'tennis', 'water', 'top', 'standing', 'player', 'large', 'ball', 'airplane', 'dog', 'plane', 'air', 'playing', 'white', 'frisbee', 'people', 'game', 'red', 'blue', 'flying', 'riding']
+'confidence': 0.895818154350781, 'text': 'a person in a green field'
+
+Search term: grass	Result #11
+https://images.unsplash.com/reserve/l48Eloe0RGm3l0OQfHNd_13112213395_dbe69fe6de_o.jpg?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=5244eaadc3372b7e4b9a1837d8ed578b
+['outdoor', 'grass', 'sitting', 'green', 'flower', 'small', 'field', 'red', 'standing', 'tree', 'white', 'black', 'park', 'bench', 'water', 'street', 'holding', 'hydrant', 'grassy', 'yellow', 'phone', 'blue', 'fire', 'man']
+'confidence': 0.8860951533758664, 'text': 'a close up of a flower'
+
+Search term: grass	Result #13
+https://images.unsplash.com/photo-1502115119422-cf416c8a7c87?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=9f60caba9feeae3b6139ceeed721f921
+['plant', 'grass', 'flower']
+'confidence': 0.9580884586702739, 'text': 'a close up of a plant'
+
+Search term: grass	Result #14
+https://images.unsplash.com/photo-1415562689440-4b13ae5da0eb?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=cf320ffe70c3c574c8f66367c1dffdc5
+['grass', 'outdoor', 'plant', 'field', 'green', 'grassy', 'lush', 'grazing', 'standing', 'large', 'man', 'tall', 'sheep', 'flying', 'white', 'water', 'track', 'group', 'kite', 'riding', 'blue', 'herd', 'playing']
+'confidence': 0.9612741648601145, 'text': 'a close up of a lush green field'
+
+Search term: red	Result #0
+https://images.unsplash.com/photo-1457419655743-2e0acc6b5122?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=528a33fb90c55d08aaf04526919e360e
+['outdoor', 'building', 'red', 'road', 'man', 'sitting', 'riding', 'side', 'doing', 'hydrant', 'board', 'trick', 'jumping', 'fire', 'air', 'light', 'street', 'door', 'walking', 'cat', 'standing', 'white']
+'confidence': 0.10237734479010116, 'text': 'a red fire hydrant sitting on the side of a building'
+
+Search term: red	Result #1
+https://images.unsplash.com/photo-1505458619848-5ae6e5bf22c7?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=fb7e8caa36d95463f6f81731ac0af51d
+['person', 'red', 'man', 'wearing', 'looking', 'holding', 'young', 'standing', 'woman', 'phone', 'boy', 'shirt', 'pink', 'hat', 'large', 'yellow', 'smoke', 'water', 'playing', 'white']
+'confidence': 0.6823092141086142, 'text': 'a person wearing a red hat'
+
+Search term: red	Result #2
+https://images.unsplash.com/photo-1433259651738-0e74537aa8b5?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=d8f663e2420647f6a85bb46c83d674bb
+['plant', 'tree', 'flower', 'red', 'vase', 'fruit', 'christmas', 'rambutan', 'pink']
+'confidence': 0.9769599699013539, 'text': 'a christmas tree'
+
+Search term: red	Result #3
+https://images.unsplash.com/photo-1489189642444-0709966aec44?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=f8cd97333d0c8844524b9582e3654de4
+['object', 'fireworks', 'stop', 'view', 'plane', 'water', 'yellow', 'top', 'colorful', 'covered', 'red', 'large', 'flying', 'rain', 'snow', 'air']
+'confidence': 0.7508708227853632, 'text': 'fireworks in the sky'
+
+Search term: red	Result #4
+https://images.unsplash.com/photo-1471138406156-7a89e687a062?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=c8e8bc718fab161ddca428fa4ad82eae
+['plant', 'flower', 'sitting', 'background', 'red', 'small', 'vase', 'photo', 'table', 'close', 'white', 'bunch', 'large', 'green', 'pink']
+'confidence': 0.9677835043812869, 'text': 'a close up of a flower'
+
+Search term: red	Result #5
+https://images.unsplash.com/photo-1495085461086-ae0ad0a8fd74?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=da4db498aee13a1f6fb6b15a9f0210e4
+['outdoor', 'red', 'umbrella', 'large', 'clock', 'front', 'tower', 'sitting', 'black', 'kite', 'standing', 'flying', 'stop', 'water', 'tall', 'city', 'pink', 'sign', 'white', 'blue', 'man', 'field']
+'confidence': 0.8059604189002703, 'text': 'a large red umbrella'
+
+Search term: red	Result #7
+https://images.unsplash.com/photo-1503631285924-e1544dce8b28?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=b687af2b5aac1302440dcb6bf41a3ece
+['indoor', 'red', 'thing', 'object', 'sitting', 'orange', 'table', 'bowl', 'top', 'clock', 'white', 'plate']
+'confidence': 0.440726376062978, 'text': 'a red bowl'
+
+Search term: red	Result #8
+https://images.unsplash.com/photo-1501472393568-6d98729ac121?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=3fe27baec82c956906bfe033800843da
+['clothing', 'orange', 'hand', 'holding', 'table', 'board', 'remote', 'red', 'blue', 'standing']
+'confidence': 0.30930467400089445, 'text': 'a hand holding an orange'
+
+Search term: red	Result #9
+https://images.unsplash.com/photo-1445197138520-6099f1c07aa0?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=814fa058c92f2dd72a4f2505f804dd5e
+['cake', 'train', 'red', 'smoke', 'table', 'top', 'small', 'flower', 'decorated', 'fruit', 'necklace', 'food', 'display', 'air', 'old', 'brace', 'group', 'white']
+'confidence': 0.48851881769219985, 'text': 'a cake made to look like a train'
+
+Search term: red	Result #12
+https://images.unsplash.com/photo-1485081791449-31e80b36c854?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=23395e035e00fdc4bad0987c5a3b138a
+['building', 'light', 'outdoor', 'night', 'red', 'dark', 'lit', 'stop', 'traffic', 'sitting', 'large', 'table', 'street', 'sign', 'city', 'white', 'air']
+'confidence': 0.7605546118036761, 'text': 'a red light at night'
+
+Search term: red	Result #13
+https://images.unsplash.com/photo-1501236570302-906143a7c9f8?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=29209bd20b5278063262df16ff1dbf58
+['outdoor', 'red', 'building', 'bicycle', 'front', 'sitting', 'brick', 'leaning', 'water', 'bench', 'parked', 'side', 'sidewalk', 'black', 'hydrant', 'blue', 'standing']
+'confidence': 0.9139605479762339, 'text': 'a red bicycle sitting next to a brick wall'
+
+Search term: red	Result #14
+https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=17eee5837825741cf25c375f3eeb8ed2
+['person', 'red', 'woman', 'standing', 'man', 'holding', 'wearing', 'hand', 'game', 'young', 'phone', 'large', 'riding', 'board', 'ball', 'hydrant', 'white', 'shirt']
+'confidence': 0.7421196536600096, 'text': 'a person in a red shirt'
+
+BEST PHOTO:
+https://images.unsplash.com/photo-1508749199921-1b8a349245c2?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=2771064f2f02c6c9f07450c610281c6d
+['grass', 'fungus', 'bird', 'outdoor', 'small', 'sitting', 'little', 'top', 'red', 'food', 'piece', 'standing', 'white', 'covered', 'field', 'black', 'eating', 'apple', 'fruit', 'branch', 'perched']
+
