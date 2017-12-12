@@ -69,7 +69,7 @@ def get_search_terms(tags, text):
             continue
 
         elif token in ['large', 'covered', 'background', 'standing', 'top', 'laying', 'tall', 'filled', 'many',
-                       'several']:
+                       'several', 'small', 'little']:
             continue
         elif token in tags:
             modded_tokens.append(token)

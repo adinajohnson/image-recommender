@@ -3,11 +3,16 @@ from unsplash.api import Api
 from unsplash.auth import Auth
 from unsplash.photo import Photo
 import time
-from difflib import SequenceMatcher
 import keyworder
 
 
 def azureAnalysis(photo_url, subscription_key):
+    """
+    Does Microsoft Azure (TM) analysis on a photo at a given url.
+    :param photo_url: the url of the photo to be analyzed
+    :param subscription_key: the key which one uses to access Azure visual analysis services
+    :return: tags: the list tags which Azure returns. captions: a dictionary of the caption and confidence which Azure returns
+    """
 
     uri_base = 'westcentralus.api.cognitive.microsoft.com'
 
@@ -46,26 +51,51 @@ def azureAnalysis(photo_url, subscription_key):
     return tags, captions
 
 
-def unsplashRequest(tag, api, photo_worker):
-    photos = api.search.photos(tag, per_page=15)['results']
+def unsplashRequest(search_term, api, photo_worker):
+    """
+    Gets a list of urls of photos from the Unsplash database.
+    :param search_term: the search term to query the database
+    :param api: An Unsplash api object from the unsplash library
+    :param photo_worker: an unsplash.photo.Photo object
+    :return: photo_urls: a list of urls of photos
+    """
+    # search the unsplash database for the given term
+    photos = api.search.photos(search_term, per_page=15)['results']
 
-    download_urls = []
+    photo_urls = []
     for photo in photos:
-        download_urls.append(photo_worker.download(photo.id)['url'])
+        # get the download url for one of the photos returned by the search
+        url = photo_worker.download(photo.id)['url']
+        photo_urls.append(url)
 
-    return download_urls
+    return photo_urls
 
 
 def jaccard(A, B):
+    """
+    Computes the Jaccard index of two sets.
+    :param A: one set
+    :param B: another set
+    :return: the jaccard index.
+    """
     A = set(A)
     B = set(B)
 
-    numer = len(A & B)
-    denom = len(A | B)
+    numer = len(A & B) # the length of the intersection of sets A and B
+    denom = len(A | B) # the length of the union of sets A and B
     return numer/denom
 
 
-def write_picture_info(file, heading, url, tags, captions):
+def write_picture_info(file, heading, url, tags, captions=None):
+    """
+    Writes some info about a picture to a file, including its url and some of the info from an Azure analysis
+    :param file: the file to which you want to write the info
+    :param heading: a heading which can give some information about the image
+    :param url: the url of the image
+    :param tags: the list of the tags returned by Azure
+    :param captions: optional. The "captions" dictionary that Azure returns.
+    :return:
+    """
     # record some data
     file.write(heading + '\n')
     file.write(url)
@@ -76,9 +106,16 @@ def write_picture_info(file, heading, url, tags, captions):
         file.write(str(captions).strip('[{}]'))
     file.write('\n\n')
 
+
 def main(orig_photo_url, text):
+    """
+    Handles the image recommending.
+    :param orig_photo_url: the url where the
+    :param text: the context text to look at to rank the tags
+    :return:
+    """
     # get stuff so that we can write results to a file.
-    results_file = open('trial5.output', 'w')
+    results_file = open('trial9.output', 'w')
 
     #get unsplash API stuff
     client_id = os.environ.get('UNSPLASH_ID', None)
@@ -123,8 +160,7 @@ def main(orig_photo_url, text):
 
     scores = {}
     for url, tags in tagged_photos.items():
-        sm = SequenceMatcher(orig_tags, tags)
-        scores[url] = sm.ratio()
+        scores[url] = jaccard(orig_tags, tags)
 
     best_url = max(scores, key=scores.get)
     urllib.request.urlretrieve(best_url, 'BEST.jpeg')
@@ -136,6 +172,6 @@ def main(orig_photo_url, text):
 
 
 if __name__ == '__main__':
-    orig_photo_url = 'http://sheepmountain.com/wp-content/uploads/2016/01/20150131-DSC_0640-3-1500x700.jpg'
-    text = open('goat_mountain.output').read()
+    orig_photo_url = 'http://media.gettyimages.com/photos/boston-harbor-cityscape-anchored-sailboats-under-blue-sky-picture-id155015591'
+    text = open('boston_harbor.output').read()
     main(orig_photo_url, text)
