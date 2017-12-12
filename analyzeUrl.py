@@ -114,57 +114,57 @@ def main(orig_photo_url, text):
     :param text: the context text to look at to rank the tags
     :return:
     """
-    # get stuff so that we can write results to a file.
-    results_file = open('trial9.output', 'w')
+    # get a file so we can write results into it
+    results_file = open('mushroom_trial10.output', 'w')
 
     #get unsplash API stuff
     client_id = os.environ.get('UNSPLASH_ID', None)
     client_secret = os.environ.get('UNSPLASH_SECRET', None)
     redirect_uri = ""
     code = ""
-
     auth = Auth(client_id, client_secret, redirect_uri, code=code)
     api = Api(auth)
-
     photo_worker = Photo(api=api)
 
-    unsplash_requests = 0
-
-    # get env variable API key
+    # get env variable Azure API key
     azure_key = os.environ.get('AZURE_KEY', None)
 
-    azure_requests = 0
-
+    # do Azure analysis on the original photo that we want recommendations for, and write the retrieved into to a file
     orig_tags, orig_captions = azureAnalysis(orig_photo_url, azure_key)
-
     write_picture_info(results_file, 'Original Photo:', orig_photo_url, orig_tags, orig_captions)
 
-    search_terms = keyworder.get_search_terms(orig_tags, text)
+    # use those tags and the text provided to get a re-ranking of the importance of tags/search terms
+    search_terms = keyworder.get_search_terms(orig_tags, text, results_file)
 
     tagged_photos = {} # a dict which maps the url where we can find a photo to the tags of that photo
-    for term in search_terms:
-        download_urls = unsplashRequest(term, api, photo_worker)
-        unsplash_requests += 11
-        for i, url in enumerate(download_urls):
+
+    # iterate through the top 3 search terms and search each one
+    for term in search_terms[:3]:
+        photo_urls = unsplashRequest(term, api, photo_worker)
+
+        # analyze each of the photos returned
+        for i, url in enumerate(photo_urls):
             try:
+                # the following line will throw an KeyError if Azure can't use the photo url, which happens often
                 tags, captions = azureAnalysis(url, azure_key)
                 tagged_photos[url] = tags
 
+                # write information about this photo to a file
                 heading = 'Search term: %s\tResult #%d' %(term, i)
                 write_picture_info(results_file, heading, url, tags, captions)
             except KeyError:
                 print('KeyError with image. Image is probably "not accessible." Moving on to next one.')
-            azure_requests += 1
-        if unsplash_requests > 80 or azure_requests > 250:
-            break
 
-    scores = {}
+    scores = {} # this dict will map photo urls to a similarity score, so that we can find the most similar photo
     for url, tags in tagged_photos.items():
         scores[url] = jaccard(orig_tags, tags)
 
+    # the image we want to recommend is the photo with the highest similarity score
     best_url = max(scores, key=scores.get)
+    # save the photo to disk so we can look at it.
     urllib.request.urlretrieve(best_url, 'BEST.jpeg')
 
+    # write information about the best photo to the file.
     best_tags = tagged_photos[best_url]
     write_picture_info(results_file, 'BEST PHOTO:', best_url, best_tags, None)
 
@@ -172,6 +172,6 @@ def main(orig_photo_url, text):
 
 
 if __name__ == '__main__':
-    orig_photo_url = 'http://media.gettyimages.com/photos/boston-harbor-cityscape-anchored-sailboats-under-blue-sky-picture-id155015591'
-    text = open('boston_harbor.output').read()
+    orig_photo_url = 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Amanita_muscaria_%28fly_agaric%29.JPG/1024px-Amanita_muscaria_%28fly_agaric%29.JPG'
+    text = open('mushroom.output').read()
     main(orig_photo_url, text)
