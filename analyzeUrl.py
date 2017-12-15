@@ -116,7 +116,7 @@ def recommend(orig_photo_url, text):
     :return:
     """
     # get a file so we can write results into it
-    results_file = open('mountain_trial.output', 'w')
+    results_file = open('Everest_WierdD_0_01.output', 'w')
 
     #get unsplash API stuff
     client_id = os.environ.get('UNSPLASH_ID', None)
@@ -140,7 +140,7 @@ def recommend(orig_photo_url, text):
     tagged_photos = {} # a dict which maps the url where we can find a photo to the tags of that photo
 
     # iterate through the top 3 search terms and search each one
-    for term in search_terms[:3]:
+    for term in search_terms[:5]:
         photo_urls = unsplashRequest(term, api, photo_worker)
 
         # analyze each of the photos returned

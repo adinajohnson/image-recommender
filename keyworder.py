@@ -163,14 +163,15 @@ def get_search_terms(tags, text, file):
     # now we begin the convergence
     mean_square_error = 1
     threshold = 0.00001
-    file.write('threshold = %f' %threshold + '\n')
+    d = 0.85
+    file.write('threshold = %f, d = %f' %(threshold, d) + '\n')
     file.write('Converging:\n')
     # as long as our mean squared error is above a certain threshold, keep trying to converge
     while mean_square_error > threshold:
         sqer = [] # initialize a list which will hold the squared errors for this iteration
         # update each of the vertices and append the squared error
         for v in vertices:
-            error = v.update(0.85, vertices, weights)
+            error = v.update(d, vertices, weights)
             sqer.append(error)
         mean_square_error = mean(sqer)
 
@@ -198,10 +199,9 @@ def get_search_terms(tags, text, file):
 
     return search_terms
 
-
 if __name__ == "__main__":
     tags = ['outdoor', 'mountain', 'nature', 'forest', 'background', 'snow', 'lake', 'standing', 'covered', 'front',
             'tree', 'man', 'field', 'group', 'tall', 'hill', 'yellow', 'grazing', 'large', 'skiing', 'flock', 'slope']
-    text = open('goat_mountain.output').read()
-    file = open('mountain.output')
+    text = open('mountain_text.txt').read()
+    file = open('Testeroonis.output', 'w')
     get_search_terms(tags, text, file)
